@@ -53,6 +53,7 @@ router.delete(
   removeDependency
 );
 router.get("/:id/dependencies", getTaskDependencies);
+router.get("/employee/my-tasks", getEmployeeTasks); // ✅ This must exist
 
 // Time tracking
 router.post("/:id/start-timer", startTimeTracking);
